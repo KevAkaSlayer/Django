@@ -21,6 +21,7 @@ from .import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("first_app/",include("first_app.urls")),
+    path("secondapp/",include("secondapp.urls")),
     path('contact/',views.contact),
     path('',views.home),
 ]
